@@ -1,0 +1,102 @@
+------------------------------------------------------------------------
+r998 | nevcairiel | 2010-12-01 18:39:53 +0000 (Wed, 01 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua
+   M /trunk/AceConfig-3.0/AceConfigRegistry-3.0/AceConfigRegistry-3.0.lua
+
+AceConfig-3.0: Added support for the "itemControl" on select type entrys which controls which widget should be used for the dropdown (optional)
+------------------------------------------------------------------------
+r997 | nevcairiel | 2010-12-01 18:36:28 +0000 (Wed, 01 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-DropDown.lua
+
+AceGUI-3.0: DropDown: Added parameters to all external APIs to allow specifying the type of widget to be used to render the dropdown (optional, backwards compatible)
+------------------------------------------------------------------------
+r996 | nevcairiel | 2010-12-01 18:34:17 +0000 (Wed, 01 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-DropDown-Items.lua
+
+AceGUI-3.0: Export the DropDown ItemBase as a LibStub library so other addons can use it to implement widgets to be used in AceGUI DropDowns (AceGUI-3.0-DropDown-ItemBase)
+------------------------------------------------------------------------
+r995 | nevcairiel | 2010-12-01 17:23:18 +0000 (Wed, 01 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIContainer-TabGroup.lua
+
+AceGUI-3.0: TabGroup: Fix a slight layout problem that caused tabs to jump in width when using the TabGroup in a scrollframe with a disappearing scroll bar.
+------------------------------------------------------------------------
+r994 | nevcairiel | 2010-11-27 12:39:16 +0000 (Sat, 27 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua
+
+AceConfigDialog-3.0: Implement style="radio" for select boxes. (Patch by vhaarr, Ticket #149)
+------------------------------------------------------------------------
+r993 | nevcairiel | 2010-11-18 18:49:17 +0000 (Thu, 18 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua
+
+AceConfigDialog-3.0: Fixed an issue with select groups that caused non-groups to sneak into the DropDown and wreak havoc. (Ticket #197)
+------------------------------------------------------------------------
+r992 | nevcairiel | 2010-11-18 18:23:21 +0000 (Thu, 18 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIContainer-TreeGroup.lua
+
+AceGUI-3.0: TreeGroup: Fix a bug that caused tree groups to become unresponsive under certain conditions (Ticket #202 and #189)
+------------------------------------------------------------------------
+r991 | nevcairiel | 2010-11-12 16:51:38 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-DropDown.lua
+
+AceGUI-3.0: DropDown: upvalue
+------------------------------------------------------------------------
+r990 | nevcairiel | 2010-11-12 16:39:17 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIContainer-TreeGroup.lua
+
+AceGUI-3.0: TreeGroup: Allow setting of "treesizable" in the status table to false. (Ticket #163)
+------------------------------------------------------------------------
+r989 | nevcairiel | 2010-11-12 16:22:46 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-EditBox.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-MultiLineEditBox.lua
+
+AceGUI-3.0: Implement focus handling for the multiline editbox as well (and fix a small glitch in the editbox)
+------------------------------------------------------------------------
+r988 | nevcairiel | 2010-11-12 16:16:50 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-EditBox.lua
+
+AceGUI-3.0: EditBox: Implement full support for Focus handling (Ticket #193)
+------------------------------------------------------------------------
+r987 | nevcairiel | 2010-11-12 16:07:53 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Button.lua
+
+AceGUI-3.0: Button: Clear the focus before firing the callback, so its possible to set a new focus inside the callback (Ticket #192)
+------------------------------------------------------------------------
+r986 | nevcairiel | 2010-11-12 16:05:56 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua
+
+AceConfigDialog-3.0: Pass the proper order of elements to "select"-type groups (Ticket #184)
+------------------------------------------------------------------------
+r985 | nevcairiel | 2010-11-12 16:05:13 +0000 (Fri, 12 Nov 2010) | 3 lines
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIContainer-DropDownGroup.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-DropDown.lua
+
+AceGUI-3.0:
+- The DropDown widget now accepts a second parameter for SetList that specifies a custom order for the elements (instead of always sorting by key)
+- The DropDownGroup supports the same for SetGroupList, and just forwards to DropDown
+------------------------------------------------------------------------
+r984 | nevcairiel | 2010-11-12 15:35:53 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIContainer-Frame.lua
+
+AceGUI-3.0: Frame: Dynamically change the size of the header background to fit longer texts (Ticket #171)
+------------------------------------------------------------------------
+r983 | nevcairiel | 2010-11-06 22:00:40 +0000 (Sat, 06 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Icon.lua
+
+AceGUI-3.0: Icon: Fix resetting the disabled flag.
+------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+## Interface: 40000
+## Title: Finance
+## Notes: Used to save auction house data.
+## Author: Michael Williams
+## Version: 0.1
+## SavedVariables: FinanceDB
+
+embeds.xml
+
+Core.lua

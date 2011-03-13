@@ -106,7 +106,7 @@ function Finance:QueryItems()
 	end
 	
 
-	if (num+(page*50)) <= total then
+	if (num+(page*50)) >= total then
 		page = 0
 		scanning = false
 		self:CancelTimer(self.scanTimer)
